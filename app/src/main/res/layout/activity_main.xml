@@ -1,18 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C9EEEC"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="File Usage Activity"
+        android:textColor="#038503"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"></TextView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    <view-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="2dp"></view>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/uploadbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Updoad File"
+                    android:textAllCaps="false"
+                    android:textSize="30dp"></Button>
+
+                <Button
+                    android:id="@+id/downloadbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Download File"
+                    android:textAllCaps="false"
+                    android:textSize="30dp"></Button>
+
+
+                <Button
+                    android:id="@+id/choosebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose File"
+                    android:textAllCaps="false"
+                    android:textSize="30dp"></Button>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/filenametxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20sp"
+                    android:text="selected file name"
+                    android:textColor="#2D5DD1"
+                    android:textSize="25dp"></TextView>
+
+                <TextView
+                    android:id="@+id/fileDatatxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="10dp"
+                    android:text="selected file Data"
+                    android:textColor="#232DFF"
+                    android:textSize="25dp"></TextView>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

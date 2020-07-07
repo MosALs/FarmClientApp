@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+<!--    <TextView-->
+<!--        android:id="@+id/enter_phone_txtv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Enter Phone number"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_margin="5sp"/>-->
+
+
+    <EditText
+        android:layout_margin="5sp"
+        android:id="@+id/phoneno_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone number"
+        android:inputType="phone"
+        android:digits="0123456789+" />
+
+</LinearLayout>
